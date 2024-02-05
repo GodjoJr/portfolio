@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+header h1 {
+    font-family: Times, serif;
+}
+
+header .date-de-naissance {
+    font-family: Times, serif;
+}
+
+/* MAIN */
+
+.hommage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 78rem;
+    margin: 0px auto;
+    color: black;
+    align-items: center;
+    padding: 0px 0px 0px 1rem;
+    background-color: white;
+}
+
+.hommage blockquote {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hommage img {
+    max-width: 100%;
+}
+
+.biographie {
+    margin: 2rem auto;
+    padding: 0px 0.5rem;
+    max-width: 40rem;
+}
+
+.biographie h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.biographie p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.biographie hr {
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: end;
+    font-size: 0.5rem;
+}

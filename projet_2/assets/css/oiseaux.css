@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 6.25rem;
+    background-color: #eeeeee
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    padding: 0 0 0 1rem;
+    text-transform: uppercase;
+}
+
+
+section{
+    display: flex;
+}
+
+
+
+.section-top{
+    background-color: rgba(26,188,156,255);
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.section-top img{
+    border-radius: 50%;
+    margin: 3rem;
+}
+
+.section-top .titre{
+    margin-top: 3rem;
+}
+
+.section-top p{
+    margin-bottom: 3rem;
+}
+
+
+
+.section-mid{
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(91, 91, 107);
+    padding: 2.5rem 0;
+}
+
+.section-mid h2{
+    margin-bottom: 2rem;
+}
+
+.section-mid p{
+    padding: 0 0.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.section-mid a{
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem 0.7rem;
+    border: solid 1px rgb(80, 80, 80);
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    max-width: 20rem;
+}
+
+.section-mid a i{
+    color: rgb(80, 80, 80);
+    padding-right: 0.5rem;
+}
+
+
+.section-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-bottom img{
+    width: 30%;
+    padding: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
