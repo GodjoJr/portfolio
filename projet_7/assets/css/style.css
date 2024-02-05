@@ -1,0 +1,1260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* COMMON TO ALL */
+
+section {
+    /* toutes les sections sont en flex, font 1240px de large
+    et sont centrées sur la page */
+    display: flex;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    /* pas de soulignage sur les textes des boutons */
+    text-decoration: none;
+}
+
+h1 {
+    /* style du titre 1 */
+    color: #FFF;
+    font-family: "Poppins", serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 62px;
+
+    margin-bottom: 4px;
+
+}
+
+h2 {
+    /* style des titres 2 */
+    color: #7E1625;
+    font-family: "Work Sans", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+
+    margin-bottom: 6px;
+}
+
+h3 {
+    /* style des titres 3 */
+    color: rgba(25, 24, 25, 0.80);
+    font-family: "Poppins", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px;
+
+    margin-bottom: 55px;
+}
+
+h4 {
+    /* style des titres 4 */
+    color: #FFF;
+    font-family: "Work Sans", serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+
+    padding: 3px 0 11px 0;
+}
+
+h5 {
+    /* style des titres 5 */
+    color: #FFF;
+    font-family: "Poppins", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px;
+
+
+    margin: 6px 0 14px 0;
+}
+
+hr {
+    /* style des lignes horizontales (séparateurs) */
+    width: 336px;
+    border: none;
+    border-bottom: 1px dotted #FFFFFF4D;
+
+}
+
+li {
+    /* pas le point moche avant les items des listes */
+    list-style: none;
+    
+}
+
+#prev {
+    /* position du bouton à gauche du carrousel */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+#next {
+    /* position du bouton à droite du carrousel */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.button-red {
+    /* format et style des boutons rouges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.60);
+    background: #7E1625;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    margin: 0;
+    transition-duration: 300ms;
+}
+
+.button-white {
+    /* format et style des boutons blancs */
+    display: flex;
+    align-items: center;
+
+    color: #7E1625;
+    font-family: "Work Sans", serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+
+    transition-duration: 300ms;
+}
+
+
+.btn {
+    /* format des boutons du carrousel et du slider */
+    background-color: #7e1626;
+    border-radius: 50%;
+    border: none;
+    flex-shrink: 0;
+
+    color: white;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.btn:hover {
+    /* effet sur les boutons du carrousel et du slider */
+    transform: scale(1.2);
+}
+
+.button-red:hover,
+.button-white:hover {
+    /* effet sur les boutons blancs et rouges */
+    transform: scale(1.05);
+}
+
+/* COMMON TO ALL - END ------------------------------ */
+
+
+
+
+
+/* HEADER ---------------------------------------- */
+
+header {
+    /* format du header */
+    margin: auto;
+}
+
+header .fade {
+    /* dégradé gris en fond qui continue à l'infini à droite */
+    margin-left: 50%;
+    background: linear-gradient(270deg, rgba(25, 24, 25, 0.08) 0%, rgba(25, 24, 25, 0.00) 107.45%);
+    padding: 13px 0;
+}
+
+header .top-nav {
+    /* boutons de la nav-haut sur le dégradé */
+    width: 620px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .top-nav ul {
+    /* bouton de la nav-haut en ligne */
+    display: flex;
+}
+
+header .top-nav a {
+    /* style des boutons de la nav-haut */
+    color: #000;
+    font-family: "Work Sans", serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.top-nav li {
+    /* écart entre les boutons de la nav-haut */
+    padding: 0 20px;
+}
+
+header .socials {
+    /* écart entre les logos fb/insta */
+    padding: 0 0 0 10px;
+}
+
+header .top-nav li:first-child {
+    /* petite séparation des boutons du haut */
+    border-right: solid 1px #1918191A;
+}
+
+header .insta img {
+    /* style bouton insta */
+    background-color: #7e1626;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+header .facebook img {
+    /* style bouton facebook */
+    background-color: #7e1626;
+    border-radius: 50%;
+    padding: 6px 8px 5px 7px;
+}
+
+header nav {
+    /* bar de navigation du bas */
+    width: 1240px;
+    margin: 0 auto;
+    padding: 14px 0;
+}
+
+header nav li {
+    /* écart entre les boutons de la nav-bas */
+    padding: 0 0 0 40px;
+}
+
+header nav img {
+    /* écart entre les icones et le texte */
+    padding: 0 10px;
+}
+
+header nav ul {
+    /* boutons de la nav-bas en ligne et à droite*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a {
+    /* style boutons nav-bas */
+    color: #191819;
+    font-family: "Work Sans", serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+header nav li:hover,
+header .top-nav li:hover {
+    text-decoration: underline rgba(25, 24, 25, 0.3);
+    text-underline-offset: 0.4em
+}
+
+header nav span {
+    /* style bouton "billeterie" */
+    color: #7E1625;
+    padding-left: 30px;
+}
+
+header nav span:hover {
+    text-decoration: underline #7e162630;
+}
+
+header nav .ticketing {
+    /* pour placer l'icone de billeterie */
+    position: relative;
+}
+
+header nav .ticketing img {
+    /* position de l'icone de billeterie */
+    position: absolute;
+}
+
+header .logo {
+    /* div pour placer le logo */
+    margin: 0 auto;
+    position: relative;
+    width: 1240px;
+}
+
+header .logo img {
+    /* position du logo */
+    position: absolute;
+    bottom: -60px;
+}
+
+header .menu > li{
+    /* postition de boutons des menus déroulant */
+    position: relative;
+}
+
+header li .submenu {
+    /* postion du menu déroulant lorsque le bouton n'est pas survolé */
+    display: none;
+    position: absolute;
+    left: 450;
+    z-index: 1;
+}
+
+header li:hover .submenu{
+    /* apparition des sous-menus lors que le bouton principal est survolé */
+    display: block;
+}
+
+header .submenu li {
+    /* format des boutons ddes sous-menus */
+    display: block;
+    margin: 0;
+    width: 130px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(77, 77, 77, 0.5);
+}
+
+/* HEADER END -----------------------------------  */
+
+
+
+
+
+
+/* SECTION 1 - HOME -------------------------------- */
+
+#home {
+    /* disposition de la section */
+    height: 540px;
+    margin-top: 14px;
+    margin-bottom: 70px;
+}
+
+#home .carousel-top {
+    /* dispostion et taille du carrousel */
+    position: relative;
+    width: 1240px;
+    height: 540px;
+
+    padding: 0;
+    margin: 0;
+}
+
+#home .slide {
+    /* toutes les images du carrousel invisible par défaut */
+    position: absolute;
+    opacity: 0;
+
+    transition-duration: 0.6s;
+}
+
+#home .slide.active{
+    /* image affichée par le carrousel */
+    opacity: 1;
+}
+
+#home .slide img {
+    /* taille et position des images du carrousel */
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#home .home-infos {
+    /* position des informations */
+    position: absolute;
+    width: 560px;
+    margin: 0 0 0 95px;
+
+    top: 130px;
+}
+
+#home .date {
+    /* bouton avec la date */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(5px);
+
+    margin-bottom: 22px;
+
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+#home .home-infos .text-bottom {
+    /* texte indiquant le lieu */
+    display: flex;
+    align-items: center;
+
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    margin: 12px 0 40px 0;
+}
+
+#home .text-bottom p,
+.text-bottom img {
+    /* espace entre l'icone et le texte */
+    padding-right: 10px;
+}
+
+/* boutons de la première section */
+#home .buttons {
+    /* boutons en ligne */
+    display: flex;
+}
+
+#home .buttons .button-red {
+    /* taille du bouton rouge */
+    width: 201px;
+    height: 50px;
+}
+
+#home .button-white .icon {
+    /* style de l'icone dans le bouton blanc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3px 12px 3px 3px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(126, 22, 37, 0.20);
+
+    border: none;
+    z-index: 1;
+}
+
+#home .buttons .button-white {
+    /* taille et espacement du bouton blanc */
+    width: 263px;
+    height: 50px;
+    flex-shrink: 0;
+
+    margin: 0 0 0 10px;
+}
+
+#home .btn{
+    /* format des boutons du carrousel */
+    padding: 20px 24px;
+}
+
+
+
+/*SECTION 1 - HOME END ------------------------------------ */
+
+
+
+
+
+/* SECTION 2 - RASSEMBLEMENT ----------------------------------- */
+
+#rassemblement {
+    /* écart avec la section suivante */
+    margin-bottom: 106px;
+}
+
+#rassemblement .container-left {
+    /* image de gauche */
+    width: 442px;
+    height: 484px;
+    flex-shrink: 0;
+
+    background-image: url(../img/img-section2-left.png);
+    background-size: cover;
+}
+
+#rassemblement .container-right {
+    /* image de droite */
+    width: 315px;
+    height: 484px;
+    flex-shrink: 0;
+
+    background-image: url(../img/img-section2-right.png);
+    background-size: cover;
+}
+
+#rassemblement .container-mid {
+    /* marges du texte central */
+    padding: 26px 0 0 47px;
+}
+
+#rassemblement .container-mid .text-top {
+    /* style du texte du haut */
+    color: #191819;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    padding-right: 87px;
+}
+
+#rassemblement .container-mid .text-bottom {
+    /* style du texte du bas */
+    color: rgba(25, 24, 25, 0.80);
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    padding-right: 80px;
+    margin: 20px 0;
+}
+
+#rassemblement .container-mid .button-red {
+    /* taille du bouton */
+    width: 201px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+/* SECTION 2 - RASSEMBLEMENT END ---------------------- */
+
+
+
+
+
+/* SECTION 3 - STATS ------------------------------------ */
+
+#stats {
+    /* format de la section */
+    margin-bottom: 72px;
+    height: 344px;
+
+    background-image: url(../img/img-section3.png);
+}
+
+#stats .stat {
+    /* taille des différentes parties */
+    width: 25%;
+    height: fit-content;
+
+    padding-top: 82px;
+}
+
+#stats .stat div {
+    /* bordure et marge des parties */
+    border-right: 1px dotted rgba(255, 255, 255, 0.3);
+    padding-left: 24px;
+}
+
+#stats .stat p {
+    /* style du texte dans les parties */
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+
+    padding-right: 24px;
+}
+
+#stats .stat span {
+    /* style des nombres rouge au dessus des titres */
+    color: #7E1625;
+    font-family: "Poppins", serif;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+#stats .stat img {
+    /* écart entre les icones et le texte */
+    margin-right: 18px;
+}
+
+#stats .numbers {
+    /* alignement des nombres en rouge et des icones */
+    display: inline;
+}
+
+#stats sup {
+    vertical-align: text-top;
+    /* aligner le ième avec le 51 et pas qu'il soit au-dessus */
+}
+
+#stats .stat:nth-last-child(1) {
+    /* aligner le ème avec les autres cartes */
+    padding-top: 70px;
+}
+
+#stats .stat:nth-last-child(1) div {
+    /* enlever la dernière bordure à droite */
+    border: none;
+}
+
+/* SECTION 3 - STATS END ------------------------------------------- */
+
+
+
+
+
+/* SECTION 4 - TOUR DE FRANCE --------------------------------------- */
+
+#tour-de-france {
+    /* format de la section */
+    margin-bottom: 59px;
+    flex-direction: column;
+}
+
+#tour-de-france .container-mid {
+    /* marge du texte central */
+    padding-left: 60px;
+}
+
+#tour-de-france .galerie {
+    /* agencement des différentes parties de la section */
+    display: flex;
+}
+
+#tour-de-france .button-white {
+    /* style et taille du bouton blanc */
+    width: 207px;
+    height: 50px;
+    flex-shrink: 0;
+    border: solid 1px #7E1625;
+
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#tour-de-france .button-red {
+    /* taille du bouton rouge */
+    justify-content: flex-start;
+    width: 244px;
+    flex-shrink: 0;
+}
+
+#tour-de-france .icon {
+    /* style de l'icone dans le bouton rouge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.20);
+
+    margin: 3px 10px 3px 3px;
+
+}
+
+#tour-de-france p {
+    /* style du texte */
+    color: #191819;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    line-height: 26px;
+
+}
+
+#tour-de-france p:first-child:first-letter {
+    /* style de la lettrine */
+    color: #7E1625;
+    font-family: "Poppins", serif;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 50px;
+    float: left;
+
+    padding-right: 10px;
+}
+
+#tour-de-france .container-mid .text-top {
+    /* aménagement du texte autour de la lettrine */
+    display: flex;
+    padding-right: 80px;
+}
+
+#tour-de-france .text-mid {
+    /* marge de la fin du premier paragraphe */
+    padding-right: 130px;
+}
+
+#tour-de-france .text-bottom {
+    /* style du texte du bas */
+    color: rgba(25, 24, 25, 0.80);
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 90px 20px 0;
+}
+
+/* SECTION 4 - TOUR DE FRANCE ------------------------------------------ */
+
+
+
+
+/* SECTION 5 - BLOG --------------------------------------------------- */
+
+#blog {
+    /* format de la section */
+    margin-bottom: 81px;
+    flex-direction: column;
+    position: relative;
+}
+
+#blog .galerie-slider {
+    /* disposition des images */
+    margin-bottom: 30px;
+    
+    position: relative;
+    display: flex;
+
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+#blog .card {
+    /* taille des cartes */
+    width: 295px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+#blog .first-card{
+    margin-left: 0;
+}
+
+#blog .button-red {
+    /* taille du bouton rouge */
+    width: 225px;
+    height: 50px;
+
+    margin: 0 auto;
+}
+
+#blog .text-bottom {
+    /* style du texte */
+    color: #191819;
+    font-family: "Work Sans", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+
+    padding: 16px 0 12px 0;
+}
+
+#blog .more {
+    /* style du bouton "en savoir plus" */
+    color: #7E1625;
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+#blog .btn{
+    /* format et position des boutons "précédent" et "suivant" */
+    position: absolute;
+    padding: 20px 22px;
+}
+
+#blog #prev-slide {
+    /* position du bouton gauche */
+    top: 50%;
+    left: -6%;
+
+}
+
+#blog .end{
+    /* style des boutons "précédent" et "suivant" lorsque le slider est sur la dernière image */
+    background-color: white;
+    border: solid 1px #7E16254D;
+    color: #7e1626;
+}
+
+
+#blog #next-slide {
+    /* position du bouton droit */
+    top: 50%;
+    right: -6%;
+}
+
+/* SECTION 5 - BLOG END ----------------------------------------------- */
+
+
+
+
+
+/* SECTION 6 - NEWSLETTER ---------------------------------------------- */
+
+#newsletter {
+    /* format de la section avec les items au centre */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 39px;
+    height: 344px;
+
+    background-image: url(../img/img-section6.png);
+}
+
+#newsletter div {
+    /* pour mettre les items les uns sur les autres */
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter .text-top {
+    /* style du texte */
+    color: #B2B3B3;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+
+    margin-bottom: 38px;
+}
+
+#newsletter p {
+    /* texte au dessus du titre en majuscule */
+    text-transform: uppercase;
+}
+
+#newsletter .text-top img {
+    /* vague centrée */
+    margin: 0 auto;
+}
+
+#newsletter .label-email {
+    /* style label au dessus du bouton */
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+#newsletter .double-button {
+    /* input email et input submit sur la même ligne */
+    flex-direction: row;
+    margin-bottom: 13px;
+}
+
+#newsletter .email {
+    /* style de l'input email */
+    color: rgba(25, 24, 25, 0.80);
+    font-family: "Poppins", serif;
+    font-size: 14px;
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 100%;
+    padding-left: 26px;
+    border: none;
+}
+
+#newsletter .email:focus {
+    /* style quand on clique dans la case email */
+    outline: none;
+    background-color: rgb(247, 252, 255);
+}
+
+#newsletter .submit {
+    /* style de l'input submit */
+    color: #FFF;
+    font-family: "Work Sans", serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    width: 132px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    background: #7E1625;
+
+    transition-duration: 300ms;
+}
+
+#newsletter .submit:hover {
+    /* lorsque l'on passe sur le bouton "s'inscrire" */
+    background: #9E1625;
+
+}
+
+#newsletter .checkbox input {
+    /* position de la checkbox */
+    position: absolute;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}
+
+#newsletter .checkbox {
+    /* format et style de la checkbox */
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    user-select: none;
+
+    color: #B2B3B3;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    line-height: 16px;
+
+    width: 394px;
+}
+
+#newsletter .checkbox a {
+    /* style du bouton de "politique de confidentialité" */
+    color: #B2B3B3;
+    font-weight: bold;
+    text-decoration: underline #B2B3B34D;
+    text-underline-offset: 0.4em;
+}
+
+/* SECTION 6 - NEWSLETTER END ------------------------------------------- */
+
+
+
+
+
+/* SECTION 7 - INFOS PRATIQUES ------------------------------------------- */
+
+#infos-pratiques {
+    /* format de la section */
+    margin-bottom: 91px;
+}
+
+#infos-pratiques .container-left {
+    /* position de l'image de gauche */
+    margin: 56px 0 74px 0;
+}
+
+#infos-pratiques .container-right {
+    /* format du contenu de droite */
+    margin-left: 66px;
+    flex-direction: column;
+}
+
+#infos-pratiques .container-right .top-right {
+    /* disposition du texte et de l'image à droite */
+    display: flex;
+    justify-content: space-between;
+}
+
+#infos-pratiques .container-right .info-text {
+    /* format et style du texte */
+    margin: 56px 0 38px 0;
+    width: 305px;
+    flex-shrink: 0;
+
+    color: #191819;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#infos-pratiques .text-bottom p {
+    /* marge du texte du bas */
+    padding-right: 10px;
+}
+
+#infos-pratiques table {
+    /* bordure liées et marge sous le tableau */
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#infos-pratiques td {
+    /* format et style des cases du tableau */
+    color: rgba(25, 24, 25, 0.80);
+    font-family: "Poppins", self;
+    font-size: 13px;
+    line-height: 20px;
+
+    padding: 18px 15px 12px;
+
+    border: 1px dotted #1918194D;
+    border-left: none;
+}
+
+#infos-pratiques table p {
+    /* style du type de billets */
+    color: #191819;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+
+    padding-bottom: 10px;
+}
+
+#infos-pratiques .price {
+    /* style du prix des billets */
+    text-align: center;
+    padding: 0 30px;
+
+    color: #7E1625;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+
+    border-right: none;
+}
+
+#infos-pratiques td span {
+    /* style de la phrase "Toute sortie est définitive." */
+    font-size: 11px;
+}
+
+#infos-pratiques .button-red {
+    /* format du bouton rouge */
+    width: 263px;
+    height: 50px;
+    justify-content: flex-start;
+}
+
+#infos-pratiques .icon {
+    /* format de l'icone dans le bouton */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.20);
+
+    margin: 3px 10px 3px 3px;
+}
+
+/* SECTION 7 - INFOS PRATIQUES END --------------------------------------- */
+
+
+
+
+/* SECTION 8 - MAP ----------------------------------------------------- */
+
+#map {
+    /* format de la section */
+    margin-bottom: 109px;
+    position: relative;
+}
+
+#map .google-map {
+    /* filtre gris sur la carte */
+    filter: grayscale(1);
+}
+
+#map .info-map {
+    /* format et position du carré noir sur la carte */
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #191819;
+    width: 462px;
+    height: 460px;
+    flex-shrink: 0;
+}
+
+#map .container {
+    /* marge interne pour l'esthetique */
+    padding: 45px;
+}
+
+#map h2 {
+    /* petit titre en blanc */
+    color: #B2B3B3;
+}
+
+#map h3 {
+    /* grand titre en blanc */
+    color: white;
+    margin-bottom: 14px;
+}
+
+#map .text-top img {
+    /* format de la vague */
+    width: 152px;
+    padding-bottom: 33px;
+}
+
+#map .text-mid div {
+    /* alignement des icones et du texte central */
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#map .text-mid p {
+    /* style du texte central */
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+
+    padding-left: 11px;
+}
+
+#map .text-mid img {
+    /* taille et position des icones */
+    width: 11px;
+    height: 13px;
+    flex-shrink: 0;
+    padding-top: 4px;
+}
+
+#map .text-bottom {
+    /* style du texte du bas */
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    margin-bottom: 20px;
+}
+
+#map .text-bottom span {
+    /* style des horaires */
+    font-weight: 600;
+}
+
+#map .button-red {
+    /* format et style du bouton rouge */
+    width: 162px;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    margin-top: 25px;
+}
+
+/* SECTION 8 - MAP END -------------------------------------------------- */
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    /* format du footer */
+    background-color: #7E1625;
+    padding: 18px 0;
+}
+
+footer a {
+    /* style des boutons */
+    color: #FFF;
+    font-family: "Work Sans", serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+}
+
+footer a:hover{
+    /* style des boutons au survol */
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+footer p > a:hover {
+    text-decoration: none;
+}
+
+footer .footer-container {
+    /* format et position des objets pour qu'ils soient centrés */
+    margin: 0 auto;
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li {
+    /* style des boutons */
+    display: inline;
+    max-height: fit-content;
+    padding: 0 10px;
+    border-right: 1px solid white;
+}
+
+footer li:last-child {
+    /* pas de bordure après le dernier bouton */
+    border: none;
+}
+
+footer p {
+    /* style du texte a droite */
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    line-height: 12px;
+}

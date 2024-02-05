@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 4 - Questionnaire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- full container -->
+    <div class="container">
+        <h1 class="main-title">Questionnaire :</h1>
+        <hr>
+
+        <!-- full form -->
+        <form action="submit.html" class="full-form">
+
+
+            <!-- name section -->
+            <div class="section">
+                <div class="section-title">
+                    <h2 class="">Prénom - Nom</h2>
+                </div>
+
+                <div class="field-inputs">
+                    <!-- first name -->
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="first-name" name="first-name" required>
+                        <div id="first-name-info" class="info-text">Entrez votre prénom *</div>
+                    </div>
+
+                    <!-- last name --> 
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="last-name" name="last-name" required>
+                        <div id="last-name-info" class="info-text">Entrez votre nom de famille *</div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <!-- address section-->
+            <div class="section">
+                <div class="section-title">
+                    <h2 class="">Adresse</h2>
+                </div>
+                
+                <!-- address -->
+                <div class="input-div">
+                    <input type="text" class="input-data" id="address" name="address" required>
+                    <div id="address-info" class="info-text">Adresse *</div>
+                </div>
+                
+                <!-- address comp -->
+                <div class="input-div">
+                    <input type="text" class="input-data" id="address-comp" name="adress-comp">
+                    <div id="address-comp-info" class="info-text">Complément d'adresse</div>
+                </div>
+
+                <div class="field-inputs">
+                    <!-- state -->
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="state" name="state" required>
+                        <div id="state-info" class="info-text">Département *</div>
+                    </div>
+                    
+                    <!-- city -->
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="city" name="city" required>
+                        <div id="city-info" class="info-text">Ville *</div>
+                    </div>
+                </div>
+
+                <div class="field-inputs">
+                    <!-- zip -->
+                    <div class="input-div">
+                        <input type="number" class="input-data" id="zip" name="zip" required>
+                        <div id="zip-info" class="info-text">Code Postal *</div>
+                    </div>
+
+                    <div>
+                        <!-- country -->
+                        <select class="input-data" name="country" required>
+                            <option value="Australie">Australie</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Chine">Chine</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Emirats Arabes Unis">Emirats Arabes Unis</option>
+                            <option value="Espagne">Espagne</option>
+                            <option value="France">France</option>
+                            <option value="Irlande">Irlande</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Inde">Inde</option>
+                            <option value="Norvège">Norvège</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Suède">Suède</option>
+                            <option value="RDC">République Démocratique du Congo (RDC)</option>
+                            <option value="Corée du sud">République Démocratique de Corée du Sud (Corée du Sud)</option>
+                            <option value="UK">Royaume-Uni</option>
+                            <option value="Russie">Russie</option>
+                            <option value="USA">Etats Unis d'Amérique</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                        <div id="country-info" class="info-text">Choisissez votre pays *</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact section -->
+            <div class="section">
+                <div class="section-title">
+                    <h2 class="">Contact</h2>
+                </div>
+
+                <div class="field-inputs">
+                    <!-- phone -->
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="phone-number" name="phone" required>
+                        <div id="phone-number-info" class="info-text">Téléphone *</div>
+                    </div>
+
+                    <!-- mail --> 
+                    <div class="input-div">
+                        <input type="text" class="input-data" id="mail" name="mail" required>
+                        <div id="mail-info" class="info-text">Adresse mail *</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- gender section -->
+            <div class="section">
+                <div class="section-title">
+                    <h2 class="">Genre</h2>
+                </div>
+
+                <!-- gender -->
+                <div class="field-head">
+                    <div class="input-div">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Homme</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Femme</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Autre</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- avis section -->
+            <div class="section">
+                <div class="section-title">
+                    <h2 class="">Avis</h2>
+                </div>
+
+                <!-- question 1 -->
+                <div class="field-inputs" style="margin:0.5rem 0px;">
+                    <h3>Question 1 :</h3>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <input type="radio" id="good" name="choix1" value="good">
+                        <label for="good">Bien</label>
+                        <input type="radio" id="moyen" name="choix1" value="moyen">
+                        <label for="moyen">Moyen</label>
+                        <input type="radio" id="bad" name="choix1" value="bad">
+                        <label for="bad">Mauvais</label>
+                    </div>
+                </div>
+
+                <!-- question 2 -->
+                <div class="field-inputs" style="margin:0.5rem 0px;">
+                    <h3>Question 2 :</h3>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <input type="radio" id="good" name="choix2" value="good">
+                        <label for="good">Bien</label>
+                        <input type="radio" id="moyen" name="choix2" value="moyen">
+                        <label for="moyen">Moyen</label>
+                        <input type="radio" id="bad" name="choix2" value="bad">
+                        <label for="bad">Mauvais</label>
+                    </div>
+                </div>
+
+                <!-- question 3 -->
+                <div class="field-inputs" style="margin:0.5rem 0px;">
+                    <h3>Question 3 :</h3>
+                    <div class="input-div" style="display: flex; gap:10px;">
+                        <input type="radio" id="good" name="choix3" value="good">
+                        <label for="good">Bien</label>
+                        <input type="radio" id="moyen" name="choix3" value="moyen">
+                        <label for="moyen">Moyen</label>
+                        <input type="radio" id="bad" name="choix3" value="bad">
+                        <label for="bad">Mauvais</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bouton envoyer -->
+           <input type="submit">
+
+            <div>
+                <p class="info-required">* Champs obligatoires</p>
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        <p>Projet 4 - Sébastien HOUSSEIN</p>
+    </footer>
+
+</body>
+</html>

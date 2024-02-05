@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0px 2rem;
+    border: 1px solid;
+}
+
+.main-title {
+    font-size: 3rem;
+    margin: 2rem 0 1rem;
+    color: white;
+    text-align: center;
+}
+
+.full-form {
+    margin: 1rem 0 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 1.2rem;
+}
+
+.input-div {
+    margin-bottom: 1rem;
+}
+
+.field-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.input-data {
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    width: 100%;
+    color: #555555;
+}
+
+option {
+    color: #000000;
+}
+
+.radio {
+    color: #999;
+}
+
+.input-data:focus {
+    background-color: #a3a3a3;
+    color: rgb(30, 30, 31);
+    border-radius: rgb(83, 100, 100);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgb(43, 0, 112 / 25%);
+}
+
+.info-text {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    padding: 0.1rem;
+
+}
+
+.button {
+    font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+    background-color: #999;
+    border-radius: 10px;
+    box-shadow: 1px #0000;
+    transition-duration: 300ms;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: end;
+    font-size: 0.7rem;
+}
+
+.info-required {
+    text-align: end;
+    font-size: 0.7rem;
+}
+
+.submit-title {
+    text-align: center;
+    margin: 5rem 0;
+    color: white;
+    font-size: 2rem;
+}
+
+input[type="submit"]{
+    color: #000;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    border: solid 1Px white;
+    color: white;
+    border-radius: 3px;
+}

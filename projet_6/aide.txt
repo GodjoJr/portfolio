@@ -1,0 +1,7 @@
+mettre les images en background d'un div
+
+display none puis display block pour réafficher avec hover
+
+shift alt f
+
+filter: grayscale(1)
