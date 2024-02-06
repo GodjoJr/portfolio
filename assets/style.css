@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Koboto Slab", sans-serif;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: rgba(0, 0, 0, 0.733);
+    
+}
+
+header a {
+    padding: 0 1rem;
+    color: white;
+}
+
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+header p {
+    font-size: 2rem;
+}
+
+
+#infos {
+    background-image: url(../assets/img-dev.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    color: white;
+    text-transform: uppercase;
+}
+#infos .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#infos h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    padding: 0 15rem;
+}
+
+#infos p{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 3rem;
+    margin-bottom: 15rem;
+}
+
+#infos .disclaimer{
+    font-size: 1rem;
+}
+
+#projets {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-decoration: underline
+}
+
+.slider {
+    margin: 20vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slider div {
+    width: 30vw;
+    height: 30vh;
+}
+
+.slider a{
+    text-underline-offset: 0.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.slider a:hover{
+    text-decoration: underline;
+}
+
+.slider p:first-of-type{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
