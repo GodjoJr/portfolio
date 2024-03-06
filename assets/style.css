@@ -71,13 +71,14 @@ header p {
     margin-bottom: 5rem;
 }
 
-#infos .disclaimer{
-    font-size: 1rem;
+#projets {
+    margin-top: 2rem;
+    text-align: center;
 }
 
-#projets {
-    margin-top: 20vh;
-    text-align: center;
+.disclaimer{
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -165,12 +166,11 @@ h2 {
         margin-bottom: 5rem;
     }
     
-    #infos .disclaimer{
+    .disclaimer{
         font-size: 0.7rem;
     }
     
     #projets {
-        margin-top: 10vh;
         text-align: center;
     }
     
